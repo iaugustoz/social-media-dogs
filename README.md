@@ -6,11 +6,23 @@
 
 **Principais funcionalidades:**
 
-- **[Funcionalidade 1]**: Breve descrição.
-- **[Funcionalidade 2]**: Breve descrição.
-- **[Funcionalidade 3]**: Breve descrição.
+**🔐 Autenticação Segura**
 
----
+- **Login:** Acesse sua conta de forma rápida e segura.
+
+- **Reset de Senha:** Recupere o acesso à sua conta facilmente em caso de esquecimento de senha.
+
+- **Criação de Conta:** Crie sua conta de forma rápida e intuitiva
+
+**📊 Perfil e Estatísticas**
+
+- **Visualização de Perfil:** Gerencie suas informações pessoais
+
+- **Estatísticas de Engajamento:** Acompanhe o desempenho das publicações.
+
+**📝 Criação de Conteúdo**
+
+- **Publicação de Posts:** Compartilhe conteúdos dos seus cães
 
 ## 🚀 Tecnologias Utilizadas
 
