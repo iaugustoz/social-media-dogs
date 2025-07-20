@@ -1,7 +1,10 @@
+import LoginForm from '@/components/login/login-form';
+
 export default function LoginPage() {
   return (
-    <main>
-      <h1 className="title">Dogs Next</h1>
-    </main>
+    <section className="animeLeft">
+      <h1 className="title">Login</h1>
+      <LoginForm />
+    </section>
   );
 }
