@@ -5,6 +5,7 @@ import { useFormState, useFormStatus } from 'react-dom';
 import Button from '@/components/forms/button';
 import Input from '@/components/forms/input';
 import ErrorMessage from '../helper/error-message';
+import React from 'react';
 
 function FormButton() {
   const { pending } = useFormStatus();
@@ -26,6 +27,10 @@ export default function LoginForm() {
     error: '',
     data: null,
   });
+
+  React.useEffect(() => {
+    if (state.ok) window.location.href = '/conta';
+  }, [state.ok]);
 
   return (
     <>
