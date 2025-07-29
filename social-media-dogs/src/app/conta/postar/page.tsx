@@ -1,3 +1,4 @@
+import ContaPhotoPost from '@/components/conta/conta-photo-post';
 import { Metadata } from 'next';
 
 export const metada: Metadata = {
@@ -7,9 +8,7 @@ export const metada: Metadata = {
 export default async function PostarPage() {
   return (
     <>
-      <main>
-        <h1>Postar</h1>
-      </main>
+      <ContaPhotoPost />
     </>
   );
 }
