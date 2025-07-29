@@ -28,8 +28,8 @@
 
 Este projeto foi construído com as seguintes tecnologias e ferramentas:
 
-- Next JS
-- TypeScript
+- Next JS (v14)
+- TypeScript (v5)
 
 ---
 
