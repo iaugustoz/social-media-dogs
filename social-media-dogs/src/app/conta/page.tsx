@@ -14,7 +14,7 @@ export default async function ContaPage() {
 
   return (
     <>
-      <main>
+      <section>
         {data?.length ? (
           <Feed photos={data} />
         ) : (
@@ -37,7 +37,7 @@ export default async function ContaPage() {
             </Link>
           </div>
         )}
-      </main>
+      </section>
     </>
   );
 }
