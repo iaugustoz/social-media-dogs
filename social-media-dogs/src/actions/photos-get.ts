@@ -21,21 +21,21 @@ type PhotosGetParams = {
   user?: 0 | string;
 };
 
-export default async function photosGet({
-  page = 1,
-  total = 6,
-  user = 0,
-}: PhotosGetParams = {}) {
+export default async function photosGet(
+  { page = 1, total = 6, user = 0 }: PhotosGetParams = {},
+  optionsFront?: RequestInit
+) {
   try {
-    const { url } = await PHOTOS_GET({ page, total, user });
-
-    // Obtém JSON da API Dogs. Esse JSON possui os dados mockados p/ o Front-End
-    const response = await fetch(url, {
+    const options = optionsFront || {
       next: {
         revalidate: 10,
         tags: ['photos'],
       },
-    });
+    };
+    const { url } = await PHOTOS_GET({ page, total, user });
+
+    // Obtém JSON da API Dogs. Esse JSON possui os dados mockados p/ o Front-End
+    const response = await fetch(url, options);
     if (!response.ok) {
       throw new Error('API PhotosGet: Erro ao obter fotos');
     }
