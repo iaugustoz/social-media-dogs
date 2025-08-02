@@ -10,7 +10,7 @@ const ContaEstatisticas = dynamic(
   }
 );
 
-export const metada: Metadata = {
+export const metadata: Metadata = {
   title: 'Estatísticas | Minha Conta',
 };
 

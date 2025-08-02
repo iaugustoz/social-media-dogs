@@ -4,7 +4,7 @@ import Feed from '@/components/feed/feed';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metada: Metadata = {
+export const metadata: Metadata = {
   title: 'Minha Conta',
 };
 
